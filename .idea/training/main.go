@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // global variable
-var country string = "United States"
+const country string = "United States"
 
 func main() {
 	var loc string
