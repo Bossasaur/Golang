@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// global variable
+var country string = "United States"
+
 func main() {
 	var loc string
 	var fn string
@@ -17,11 +20,10 @@ func main() {
 	fmt.Println("")
 	fmt.Println("")
 	city := "Pittsburgh"
-	// variable scoping
+	// variable scoping - inner block
 	{
 		state := "PA"
-		fmt.Println(city)
-		fmt.Println(state)
+		fmt.Printf("This is %v, %v, %v", city, state, country)
 		fmt.Println("")
 		fmt.Println("")
 	}
