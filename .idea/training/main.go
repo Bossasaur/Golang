@@ -11,10 +11,10 @@ import "fmt"
 */
 
 func main() {
-	place := "Mindera"
-	firstname := "Susan"
-	lastname := "Lockwood"
-	space := " "
-	message := "Hello " + firstname + space + lastname + space + "from" + space + place
+	var place string = "Mindera"
+	var firstname string = "Susan"
+	var lastname string = "Lockwood"
+	var space string = " "
+	message := "Hello" + space + firstname + space + lastname + space + "from" + space + place
 	fmt.Println(message)
 }
