@@ -12,4 +12,8 @@ func main() {
 	fmt.Printf("Hello %v %v from %v! Welcome to %d!", fn, ln, loc, yr)
 	fmt.Println("")
 	fmt.Println("")
+	name := "Daniel Nations" // short variable declaration
+	fmt.Printf("Hello %v from %v! Welcome to %d!", name, loc, yr)
+	fmt.Println("")
+	fmt.Println("")
 }
