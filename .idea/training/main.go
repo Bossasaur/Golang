@@ -2,22 +2,13 @@ package main
 
 import "fmt"
 
-// comment
-
-/*
- multi
- line
- comment
-*/
-
 func main() {
 	var place string = "Mindera"
 	var firstname string = "Susan"
 	var lastname string = "Lockwood"
-	var space string = " "
-	message := "Hello" + space + firstname + space + lastname + space + "from" + space + place
+	var year int = 2022
 	fmt.Println("")
-	fmt.Print(message)
+	fmt.Printf("Hello %v %v from %v! Welcome to %d!", firstname, lastname, place, year)
 	fmt.Println("")
 	fmt.Println("")
 }
