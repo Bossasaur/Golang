@@ -16,4 +16,13 @@ func main() {
 	fmt.Printf("Hello %v from %v! Welcome to %d!", name, loc, yr)
 	fmt.Println("")
 	fmt.Println("")
+	city := "Pittsburgh"
+	// variable scoping
+	{
+		state := "PA"
+		fmt.Println(city)
+		fmt.Println(state)
+		fmt.Println("")
+		fmt.Println("")
+	}
 }
