@@ -15,6 +15,9 @@ func main() {
 	var firstname string = "Susan"
 	var lastname string = "Lockwood"
 	var space string = " "
-	message := "\n" + "Hello" + space + firstname + space + lastname + space + "from" + space + place + "\n\n"
+	message := "Hello" + space + firstname + space + lastname + space + "from" + space + place
+	fmt.Println("")
 	fmt.Print(message)
+	fmt.Println("")
+	fmt.Println("")
 }
