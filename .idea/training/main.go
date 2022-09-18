@@ -27,4 +27,22 @@ func main() {
 		fmt.Println("")
 		fmt.Println("")
 	}
+	// operators
+	var this_city string = "Pittsburgh"
+	var this_city_2 string = "Ellwood"
+	fmt.Println(this_city == this_city_2) // false
+	fmt.Println(this_city != this_city_2) // true
+
+	var a, b int = 5, 10
+	fmt.Println(a < b) // true
+
+	var d, c int = 10, 10
+	fmt.Println(d <= c) // true
+
+	var e, f int = 20, 10
+	fmt.Println(e > f) // true
+
+	var g, h int = 20, 20
+	fmt.Println(g >= h) // true
+
 }
