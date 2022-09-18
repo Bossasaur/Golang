@@ -71,4 +71,36 @@ func main() {
 	fmt.Println(!(true))  // false
 	fmt.Println(!(false)) // true
 
+	// +=
+	x += y
+	println(x) // 30
+
+	// -=
+	var xx int = 10
+	var yy int = 20
+
+	xx -= yy
+	println(xx) // -10
+
+	// *=
+	var xy int = 10
+	var yx int = 20
+
+	xy *= yx
+	println(xy) // 200
+
+	// /=
+	var xxy int = 200
+	var yxx int = 20
+
+	xxy /= yxx
+	println(xxy) // 10
+
+	// %=
+	var xyx int = 210
+	var yxy int = 20
+
+	xyx %= yxy
+	println(xyx) // 10
+
 }
