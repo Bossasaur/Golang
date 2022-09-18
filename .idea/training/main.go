@@ -73,14 +73,14 @@ func main() {
 
 	// +=
 	x += y
-	println(x) // 30
+	fmt.Println(x) // 30
 
 	// -=
 	var xx int = 10
 	var yy int = 20
 
 	xx -= yy
-	println(xx) // -10
+	fmt.Println(xx) // -10
 
 	// *=
 	var xy int = 10
@@ -94,13 +94,40 @@ func main() {
 	var yxx int = 20
 
 	xxy /= yxx
-	println(xxy) // 10
+	fmt.Println(xxy) // 10
 
 	// %=
 	var xyx int = 210
 	var yxy int = 20
 
 	xyx %= yxy
-	println(xyx) // 10
+	fmt.Println(xyx) // 10
+
+	// bitwise
+
+	// and &
+	var bitx, bity int = 12, 25
+	bitz := bitx & bity
+	fmt.Println(bitz) // 8
+
+	// or |
+	bitz = bitx | bity
+	fmt.Println(bitz) // 29
+
+	// XOR ^
+	bitz = bitx ^ bity
+	fmt.Println(bitz) // 21
+
+	// left shift <<
+	bitx = 212
+	bitz = bitx << 1
+	fmt.Println(bitz) //424
+
+	// right shift >>
+	bitz = bitx >> 2
+	fmt.Println(bitz) //53
+
+	var xxxx, yyyy int = 100, 90
+	fmt.Println(!(((xxxx + yyyy) >> 2) == 47))
 
 }
