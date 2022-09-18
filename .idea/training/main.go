@@ -153,4 +153,52 @@ func main() {
 		fmt.Println("No Appetite")
 	}
 
+	// switches
+
+	var switch_i int = 100
+	switch switch_i {
+	case 10:
+		fmt.Println("switch_i is 10")
+	case 100, 200:
+		fmt.Println("switch_i is either 100 or 200") // switch_i is either 100 or 200
+	default:
+		fmt.Println("switch_i is neither 0, 100 or 200")
+	}
+
+	switch_i = 800
+	switch switch_i {
+	case 10:
+		fmt.Println("switch_i is 10")
+	case 100, 200:
+		fmt.Println("switch_i is either 100 or 200")
+	default:
+		fmt.Println("switch_i is neither 0, 100 or 200") // switch_i is neither 0, 100 or 200
+	}
+
+	// fallthrough
+	switch_i = 10
+	switch switch_i {
+	case -5:
+		fmt.Println("-5")
+	case 10:
+		fmt.Println("10") // 10
+		fallthrough
+	case 20:
+		fmt.Println("20") // 20
+		fallthrough
+	default:
+		fmt.Println("default") // default
+	}
+
+	// conditions within cases
+	var switch_x, switch_y int = 10, 20
+	switch {
+	case switch_x+switch_y == 30:
+		fmt.Println("30") // 30
+	case switch_x <= switch_y:
+		fmt.Println("less than or equal to 30")
+	default:
+		fmt.Println("greater than 30")
+	}
+
 }
