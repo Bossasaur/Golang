@@ -55,4 +55,20 @@ func main() {
 	dec--
 	fmt.Println(dec) // 1
 
+	var x int = 10
+	var y int = 20
+
+	// and &&
+	fmt.Println((x < 100) && (x < 200)) // true
+	fmt.Println((x < 300) && (x < 0))   // false
+
+	// or ||
+	fmt.Println((x < 0) || (x < 200)) // true
+	fmt.Println((x < 0) || (x > 200)) // false
+
+	// not !
+	fmt.Println(!(x > y)) // true
+	fmt.Println(!(true))  // false
+	fmt.Println(!(false)) // true
+
 }
