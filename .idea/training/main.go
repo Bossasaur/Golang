@@ -127,7 +127,30 @@ func main() {
 	bitz = bitx >> 2
 	fmt.Println(bitz) //53
 
-	var xxxx, yyyy int = 100, 90
-	fmt.Println(!(((xxxx + yyyy) >> 2) == 47))
+	// control flow
+
+	// if
+	var con_a string = "happy"
+	if con_a == "happy" {
+		fmt.Println(con_a) // happy
+	}
+
+	// else
+	var fruit string = "grapes"
+	if fruit == "apples" {
+		fmt.Println("Fruit is an apple")
+	} else {
+		fmt.Println("Fruit is not an apple") // Fruit is not an Apple
+	}
+
+	// if else
+	fruit = "oranges"
+	if fruit == "apples" {
+		fmt.Println("I love apples")
+	} else if fruit == "oranges" {
+		fmt.Println("Oranges are not an apples") // Oranges are not apples
+	} else {
+		fmt.Println("No Appetite")
+	}
 
 }
