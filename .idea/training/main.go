@@ -201,4 +201,42 @@ func main() {
 		fmt.Println("greater than 30")
 	}
 
+	var si, sj = 10, 50
+
+	switch {
+	case si+sj == 60:
+		fmt.Println("equal to 60")
+	case si+sj <= 60:
+		fmt.Println("less than or equal to 60")
+		fallthrough
+	default:
+		fmt.Println("greater than 60")
+	}
+
+	// for loops
+
+	for li := 1; li <= 3; li++ {
+		fmt.Println("Hello World")
+	}
+
+	for li := 1; li <= 5; li++ {
+		fmt.Println(li * li)
+	}
+
+	// break
+	for li := 1; li <= 5; li++ {
+		if li == 3 {
+			break
+		}
+		fmt.Println(li)
+	}
+
+	// continue
+	for li := 1; li <= 5; li++ {
+		if li == 3 {
+			continue
+		}
+		fmt.Println(li)
+	}
+
 }
