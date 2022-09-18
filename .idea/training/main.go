@@ -45,4 +45,14 @@ func main() {
 	var g, h int = 20, 20
 	fmt.Println(g >= h) // true
 
+	//increments
+	var inc int = 1
+	inc++
+	fmt.Println(inc) //2
+
+	//decrement
+	var dec int = 2
+	dec--
+	fmt.Println(dec) // 1
+
 }
